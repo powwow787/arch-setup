@@ -6,7 +6,7 @@
 set -e
 
 echo "Starting to install things"
-sudo pacman -S   ttf-jetbrains-mono-nerd waybar fcitx5 fcitx5-hangul fcitx5-configtool wayland hyprland pipewire wireplumber pywal alsa-utils noto-fonts-cjk noto-fonts git python-pywal ly network-manager-applet base-devel alacritty dolphin wofi
+sudo pacman -S  --needed ttf-jetbrains-mono-nerd waybar fcitx5 fcitx5-hangul fcitx5-configtool wayland hyprland pipewire wireplumber pywal alsa-utils noto-fonts-cjk noto-fonts git python-pywal ly network-manager-applet base-devel alacritty dolphin wofi pipewire-alsa pipewire-pulse
 
 echo "hyprland setting..."
 mkdir -pv ~/.config/hypr
@@ -66,8 +66,8 @@ cd ~/
 
 mkdir .wallpaper
 cd .wallpaper
-curl -O https://url.kr/pxn2xc 
-mv *.png wallpaper.png
+#curl -O https://url.kr/pxn2xc 
+#mv *.png wallpaper.png
 
 wal -i ./*.png
 
