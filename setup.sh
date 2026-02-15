@@ -10,6 +10,7 @@ DOTFILE=https://github.com/elifouts/Dotfiles
 DOTFILE_DIR=~/.config/
 YAY_DIR=~/yay
 WP_SOURCE=~/arch-setup/*.png
+TERMINAL_SET=~/arch-setup/alacritty/*.toml
 
 echo "Starting to install things"
 sudo pacman -S  --needed ttf-jetbrains-mono-nerd waybar fcitx5 fcitx5-hangul fcitx5-configtool wayland hyprland pipewire wireplumber python-pywal noto-fonts-cjk noto-fonts git python-pywal network-manager-applet base-devel alacritty nnn wofi pipewire-alsa pipewire-pulse
@@ -73,6 +74,8 @@ mv $WP_SOURCE ~/.wallpaper
 #mv *.png wallpaper.png
 
 wal -i ~/.wallpaper/*.png
+
+cp -r $TERMINAL_SET ~/.config/
 
 clear
 
