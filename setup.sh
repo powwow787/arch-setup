@@ -9,7 +9,7 @@ HYPR_DIR=/home/powwow/.config/hypr
 DOTFILE=https://github.com/elifouts/Dotfiles
 DOTFILE_DIR=~/.config/
 YAY_DIR=~/yay
-WP_SOURCE=~/arch-setup/wp/*
+WP_SOURCE=~/arch-setup/*.png
 
 echo "Starting to install things"
 sudo pacman -S  --needed ttf-jetbrains-mono-nerd waybar fcitx5 fcitx5-hangul fcitx5-configtool wayland hyprland pipewire wireplumber python-pywal noto-fonts-cjk noto-fonts git python-pywal network-manager-applet base-devel alacritty nnn wofi pipewire-alsa pipewire-pulse
